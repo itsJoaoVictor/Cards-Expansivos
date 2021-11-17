@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/*body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: lightgray;
+}*/
+body{
+    background-color: lightgray;
+
+}
+footer{
+    text-align: center;
+    bottom: auto;
+    margin-top: 0;
+}
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: larger;
+}
+.corpo{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: lightgray;
+    margin-top: 2px;
+
+}
+.container{
+    display: flex;
+    width: 90vw ;
+}
+
+.painel{
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 25px;
+    color: black;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.painel h3{
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.painel.ativo{
+    flex: 5;
+
+}
+
+.painel.ativo h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    
+} 
+
+.voltar{
+    height: 30px;
+    margin-left: 10px;
+}
+
+@media(max-widht:480px) {
+    .container{
+        width: 100vw;
+    }
+
+    .painel:nth-of-type(4),.painel:nth-of-type(5),.painel:nth-of-type(6),.painel:nth-of-type(7){
+        display: none;
+    }
+}
